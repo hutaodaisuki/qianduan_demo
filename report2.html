@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人简历</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .photo {
+      width: 120px;
+      height: 160px;
+      margin-right: 30px;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .personal-info {
+      flex: 1;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .job-title {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      list-style: none;
+    }
+
+    .contact-info li {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-info li i {
+      margin-right: 10px;
+      color: #4CAF50;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #e0e0e0;
+      color: #4CAF50;
+    }
+
+    .education-item,
+    .work-item,
+    .project-item {
+      margin-bottom: 20px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+
+    .item-title {
+      font-weight: bold;
+    }
+
+    .item-date {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .item-content {
+      margin-left: 20px;
+      color: #555;
+    }
+
+    .skills {
+      margin-top: 10px;
+    }
+
+    .skills span {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .hobbies {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .hobby-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .hobby-item i {
+      margin-right: 5px;
+      color: #4CAF50;
+    }
+
+    .self-evaluation {
+      text-align: justify;
+      line-height: 1.8;
+      color: #555;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="photo">
+        <img src="./R2_image/image.png" alt="个人照片">
+      </div>
+      <div class="personal-info">
+        <div class="name">杨宇航</div>
+        <div class="job-title">求职目标：前端开发工程师</div>
+        <ul class="contact-info">
+          <li><i class="fas fa-user"></i>21岁</li>
+          <li><i class="fas fa-map-marker-alt"></i>江苏省连云港市</li>
+          <li><i class="fas fa-phone"></i><a href="tel:18606150867">18606150867</a></li>
+          <li><i class="fas fa-envelope"></i><a href="mailto:3859144827@qq.com">3859144827@qq.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title"><i class="fas fa-graduation-cap"></i> 教育背景</div>
+      <div class="education-item">
+        <div class="item-header">
+          <div class="item-title">江苏海洋大学 地理信息科学（本科）</div>
+          <div class="item-date">2024.09-2028.07</div>
+        </div>
+        <div class="item-content">
+          <p>
+            主修课程：地理信息科学，地图学，地图制作，地图分析，地图可视化，地图交互，地图服务，地图应用，地图开发，地图测试，地图维护，地图升级，webgis开发
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title"><i class="fas fa-briefcase"></i> 工作经历</div>
+      <div class="work-item">
+        <div class="item-header">
+          <div class="item-title">阿里巴巴 搜索事业部 研发工程师</div>
+          <div class="item-date">2028.09-至今</div>
+        </div>
+        <div class="item-content">
+          <ul>
+            <li>负责公司内部业务系统的设计改进，参与公司网上商城系统产品功能设计及实施工作。</li>
+            <li>负责产品调研、客户需求分析、方案写作等工作，参与公司多个大型电子商务项目的策划工作，担任大集团网上商城一期建设项目项目经理。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title"><i class="fas fa-project-diagram"></i> 项目经验</div>
+      <div class="project-item">
+        <div class="item-header">
+          <div class="item-title">wrapper开发</div>
+          <div class="item-date">2028.09-2028.12</div>
+        </div>
+        <div class="item-content">
+          <p>负责机票事业部航班信息的抓取工作：主要参与开发抓取不同航空公司航班信息的wrapper，将抓回的数据解析成约定的格式，供机票查询结果使用</p>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="item-header">
+          <div class="item-title">淘宝主搜索</div>
+          <div class="item-date">2028.12-至今</divdiv>
+          </div>
+          <div class="item-content">
+            <p><strong>角色：</strong>业务开发</p>
+            <p><strong>系统介绍：</strong>主搜索支撑阿里巴巴集团的搜索服务</p>
+            <p><strong>工作：</strong>1. 作为PM负责商品和主搜的java迁移；2. 主搜日常需求的开发和维护</p>
+            <p><strong>技术：</strong>java, spring, webx</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title"><i class="fas fa-tools"></i> 技能</div>
+        <div class="skills">
+          <span>ArcGIS</span>
+          <span>Python</span>
+          <span>MySQL</span>
+          <span>Spring</span>
+          <span>Webx</span>
+          <span>HTML/CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title"><i class="fas fa-heart"></i> 兴趣爱好</div>
+        <ul class="hobbies">
+          <li class="hobby-item"><i class="fas fa-basketball-ball"></i> 篮球</li>
+          <li class="hobby-item"><i class="fas fa-futbol"></i> 足球</li>
+          <li class="hobby-item"><i class="fas fa-gamepad"></i> 游戏</li>
+          <li class="hobby-item"><i class="fas fa-camera"></i> 摄影</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title"><i class="fas fa-star"></i> 自我评价</div>
+        <div class="self-evaluation">
+          <p>本人勤奋稳重，对待工作认真，责任心较强，待人真诚，善于沟通，时刻保持学习，积极拥抱变化。喜欢java开发，具备一定的软件分析、设计、开发和应用能力，拥有较强的学习能力与团队精神，能够很快的适应工作环境。</p>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
