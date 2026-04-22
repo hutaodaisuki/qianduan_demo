@@ -64,7 +64,7 @@ for data in datas:
     list1.append(dict0)
 # list1 = pprint.pprint(list1)#该函数不返回任何内容
 # list1 = json.dumps(list1)
-with open('./img/爬虫天气.txt', 'w',encoding = 'utf=8') as f:
+with open('../img/爬虫天气.txt', 'w',encoding = 'utf=8') as f:
     f.write(str(list1))
 
 print('爬取完毕')
