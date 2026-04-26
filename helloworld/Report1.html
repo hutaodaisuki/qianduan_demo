@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML标签实验</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #333;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    form {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    input,
+    select,
+    textarea {
+      margin: 5px 0;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部标签 -->
+    <header>
+      <h1>HTML标签实验报告</h1>
+      <p>本实验包含了理论课中学习的各种HTML标签</p>
+    </header>
+
+    <!-- 导航标签 -->
+    <nav>
+      <h2>导航菜单</h2>
+      <ul>
+        <li><a href="#basic">基本标签</a></li>
+        <li><a href="#text">文本标签</a></li>
+        <li><a href="#list">列表标签</a></li>
+        <li><a href="#table">表格标签</a></li>
+        <li><a href="#form">表单标签</a></li>
+        <li><a href="#media">媒体标签</a></li>
+        <li><a href="#semantic">语义化标签</a></li>
+      </ul>
+    </nav>
+
+    <!-- 基本标签 -->
+    <section id="basic">
+      <h2>1. 基本标签</h2>
+      <p>HTML文档的基本结构包括DOCTYPE、html、head和body标签</p>
+      <hr>
+    </section>
+
+    <!-- 文本标签 -->
+    <section id="text">
+      <h2>2. 文本标签</h2>
+      <h1>一级标题 (h1)</h1>
+      <h2>二级标题 (h2)</h2>
+      <h3>三级标题 (h3)</h3>
+      <h4>四级标题 (h4)</h4>
+      <h5>五级标题 (h5)</h5>
+      <h6>六级标题 (h6)</h6>
+      <p>这是一个段落标签 (p)，用于展示普通文本内容。</p>
+      <p>这是另一个段落，<br>使用br标签换行。</p>
+      <hr>
+    </section>
+
+    <!-- 列表标签 -->
+    <section id="list">
+      <h2>3. 列表标签</h2>
+      <h3>无序列表 (ul)</h3>
+      <ul>
+        <li>列表项1</li>
+        <li>列表项2</li>
+        <li>列表项3</li>
+      </ul>
+      <h3>有序列表 (ol)</h3>
+      <ol>
+        <li>第一项</li>
+        <li>第二项</li>
+        <li>第三项</li>
+      </ol>
+      <hr>
+    </section>
+
+    <!-- 表格标签 -->
+    <section id="table">
+      <h2>4. 表格标签</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>张三</td>
+            <td>20</td>
+            <td>男</td>
+          </tr>
+          <tr>
+            <td>李四</td>
+            <td>22</td>
+            <td>女</td>
+          </tr>
+          <tr>
+            <td>王五</td>
+            <td>21</td>
+            <td>男</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+    </section>
+
+    <!-- 表单标签 -->
+    <section id="form">
+      <h2>5. 表单标签</h2>
+      <form action="#" method="post">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" placeholder="请输入姓名">
+
+        <label for="age">年龄：</label>
+        <input type="number" id="age" name="age" min="0" max="120">
+
+        <label for="gender">性别：</label>
+        <select id="gender" name="gender">
+          <option value="male">男</option>
+          <option value="female">女</option>
+          <option value="other">其他</option>
+        </select>
+
+        <label for="message">留言：</label>
+        <textarea id="message" name="message" rows="4" placeholder="请输入留言内容"></textarea>
+
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+      </form>
+      <hr>
+    </section>
+
+    <!-- 媒体标签 -->
+    <section id="media">
+      <h2>6. 媒体标签</h2>
+      <h3>图片标签 (img)</h3>
+      <img src="https://ts3.tc.mm.bing.net/th/id/OIP-C.x6S4whhjduWuonGbRg1YugAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+        alt="示例图片" width="300">
+
+      <h3>音频标签 (audio)</h3>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        您的浏览器不支持音频标签。
+      </audio>
+
+
+      <h3>视频标签 (video)</h3>
+      <video controls width="400">
+        <!-- <source src="blob:https://www.bilibili.com/11dccab4-b0bd-4c57-9907-22cb22e02e1d" autoplay muted type="video/mp4">        打不开是因为视频文件格式错误，需要使用mp4格式 ，单纯的url链接不能播放视频-->
+        <source src="blob:https://www.bilibili.com/11dccab4-b0bd-4c57-9907-22cb22e02e1d" autoplay muted
+          type="video/mp4">
+        您的浏览器不支持视频标签。
+      </video>
+
+      <h3>iframe嵌入视频</h3>
+      <iframe width="400" height="225" src="https://www.bilibili.com/video/BV1FR4y1i77b?t=2.9&muted=1"
+        frameborder="0" allowfullscreen allow="autoplay; fullscreen; encrypted-media"></iframe>
+        <!-- muted属性静音播放视频直接在链接末尾加上 &muted=1   encrypted-media属性加密播放视频-->
+      
+      <hr>
+    </section>
+
+    <!-- 语义化标签 -->
+    <section id="semantic">
+      <h2>7. 语义化标签</h2>
+      <article>
+        <h3>文章标签 (article)</h3>
+        <p>这是一个文章内容，使用article标签包裹。语义化标签有助于搜索引擎理解页面结构。</p>
+      </article>
+
+      <aside>
+        <h3>侧边栏标签 (aside)</h3>
+        <p>这是侧边栏内容，使用aside标签包裹。</p>
+      </aside>
+
+      <footer>
+        <h3>页脚标签 (footer)</h3>
+        <p>这是页脚内容，使用footer标签包裹。</p>
+      </footer>
+    </section>
+  </div>
+</body>
+
+</html>

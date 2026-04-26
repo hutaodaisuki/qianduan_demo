@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="register-box">
+            <h1>用户注册</h1>
+            <form id="registerForm" onsubmit="return validateRegister()">
+                <div class="form-group">
+                    <label for="username">用户名：</label>
+                    <input type="text" id="username" placeholder="请输入用户名">
+                    <span class="error-msg" id="usernameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label>性别：</label>
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="male" checked> 男
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="female"> 女
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">密码：</label>
+                    <input type="password" id="password" placeholder="请输入密码">
+                    <span class="error-msg" id="passwordError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">确认密码：</label>
+                    <input type="password" id="confirmPassword" placeholder="请再次输入密码">
+                    <span class="error-msg" id="confirmPasswordError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email：</label>
+                    <input type="email" id="email" placeholder="请输入邮箱">
+                    <span class="error-msg" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">联系电话：</label>
+                    <input type="tel" id="phone" placeholder="请输入联系电话">
+                    <span class="error-msg" id="phoneError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="securityQuestion">密码问题：</label>
+                    <select id="securityQuestion">
+                        <option value="">请选择密码问题</option>
+                        <option value="school">你毕业于哪所学校？</option>
+                        <option value="color">你最喜欢的颜色是什么？</option>
+                        <option value="pet">你的宠物叫什么名字？</option>
+                        <option value="city">你出生在哪个城市？</option>
+                    </select>
+                    <span class="error-msg" id="questionError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="questionAnswer">问题答案：</label>
+                    <input type="text" id="questionAnswer" placeholder="请输入问题答案">
+                    <span class="error-msg" id="answerError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="occupation">职业：</label>
+                    <select id="occupation">
+                        <option value="">请选择职业</option>
+                        <option value="student">学生</option>
+                        <option value="engineer">工程师</option>
+                        <option value="teacher">教师</option>
+                        <option value="doctor">医生</option>
+                        <option value="designer">设计师</option>
+                        <option value="other">其他</option>
+                    </select>
+                    <span class="error-msg" id="occupationError"></span>
+                </div>
+                
+                <div class="button-group">
+                    <button type="submit" class="btn btn-primary">注册</button>
+                    <button type="reset" class="btn btn-secondary">清除</button>
+                </div>
+                
+                <div class="link">
+                    <a href="login.html">已有账号？去登录</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
