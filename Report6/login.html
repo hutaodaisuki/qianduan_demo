@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录/注册 - GeoTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Geo<span>Tech</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index6.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="login.html">登录/注册</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <h1>登录/注册</h1>
+            <p>欢迎访问GeoTech系统</p>
+        </div>
+    </section>
+
+    <!-- 登录注册区域 -->
+    <section class="auth">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <div class="auth-tab active" data-tab="login">登录</div>
+                    <div class="auth-tab" data-tab="register">注册</div>
+                </div>
+
+                <div class="auth-content">
+                    <!-- 登录表单 -->
+                    <form class="auth-form active" id="login-form">
+                        <div class="form-group">
+                            <label for="login-username">用户名</label>
+                            <input type="text" id="login-username" name="username" placeholder="请输入用户名" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">密码</label>
+                            <input type="password" id="login-password" name="password" placeholder="请输入密码" required>
+                        </div>
+                        <button type="submit" class="btn">登录</button>
+                    </form>
+
+                    <!-- 注册表单 -->
+                    <form class="auth-form" id="register-form">
+                        <div class="form-group">
+                            <label for="register-username">用户名</label>
+                            <input type="text" id="register-username" name="username" placeholder="请输入用户名" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-phone">手机号</label>
+                            <input type="tel" id="register-phone" name="phone" placeholder="请输入手机号" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">密码</label>
+                            <input type="password" id="register-password" name="password" placeholder="请输入密码,密码长度不能小于6位"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-confirm-password">确认密码</label>
+                            <input type="password" id="register-confirm-password" name="confirm-password"
+                                placeholder="请确认密码" required>
+                        </div>
+                        <button type="submit" class="btn">注册</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>关于我们</h3>
+                <p>GeoTech是一家专业的GIS技术解决方案提供商，致力于为客户提供高质量的地理信息系统服务。</p>
+            </div>
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>电话：010-12345678</p>
+                <p>邮箱：info@geotech.com</p>
+                <p>地址：北京市海淀区中关村科技园区</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index6.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="login.html">登录/注册</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 GeoTech. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
