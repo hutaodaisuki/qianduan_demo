@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>技术博客 - 代码人生</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>技术博客 · 代码人生</h1>
+      <p>记录成长轨迹，分享技术心得</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home">🏠 首页</a></li>
+        <li><a href="#tech">💻 技术分享</a></li>
+        <li><a href="#life">🌿 生活随笔</a></li>
+        <li><a href="#comments">📮 留言板</a></li>
+      </ul>
+    </nav>
+
+    <section class="blog-section">
+      <h2 class="blog-title">JavaScript进阶之路：从基础到实战</h2>
+      <div class="blog-meta">
+        <span>📅 2024年12月20日</span>
+        <span>🏷️ JavaScript / 前端开发</span>
+      </div>
+      <div class="blog-content">
+        <p>JavaScript作为前端开发的核心语言，其重要性不言而喻。从最初的简单脚本语言，到如今成为全栈开发的主力军，JavaScript一直在不断进化。</p>
+        <br>
+        <p>学习JavaScript不仅要掌握基础语法，更要深入理解其异步编程模型、闭包、原型链等核心概念。ES6+带来的新特性如箭头函数、Promise、async/await等，大大提升了开发效率和代码质量。</p>
+        <br>
+        <p>在实际项目中，我们需要将理论知识与实践相结合。通过DOM操作实现页面交互，通过事件监听响应用户操作，通过表单验证提升用户体验。这些都是前端开发中不可或缺的技能。</p>
+        <br>
+        <p>🚀 欢迎在下方留言板分享你的学习心得和问题，让我们一起进步！</p>
+      </div>
+    </section>
+
+    <section class="comment-section" id="comments">
+      <h2>留言板 · 与我交流</h2>
+
+      <div class="success-message" id="successMsg">
+        ✅ 留言提交成功！感谢您的留言。
+      </div>
+
+      <form id="commentForm">
+        <div class="form-group" id="nameGroup">
+          <label>姓名 *</label>
+          <input type="text" id="name" placeholder="请输入您的姓名">
+          <div class="error-message" id="nameError">姓名不能为空</div>
+        </div>
+
+        <div class="form-group" id="emailGroup">
+          <label>邮箱 *</label>
+          <input type="email" id="email" placeholder="yourname@example.com">
+          <div class="error-message" id="emailError">请输入有效的邮箱地址</div>
+        </div>
+
+        <div class="form-group" id="contentGroup">
+          <label>留言内容 *（不少于5字）</label>
+          <textarea id="content" placeholder="分享您的见解、问题或建议..."></textarea>
+          <div class="error-message" id="contentError">留言内容长度不少于5个字</div>
+        </div>
+
+        <button type="submit">📤 提交留言</button>
+      </form>
+
+      <div class="comments-list">
+        <h3 style="margin-bottom: 20px; color: #333; font-size: 1.2rem;">📋 最新留言</h3>
+        <div id="commentsContainer">
+          <div class="empty-state">
+            暂无留言，快来发表第一条留言吧！
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
