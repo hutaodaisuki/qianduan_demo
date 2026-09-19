@@ -1,0 +1,90 @@
+/* ============================================================
+ *  全局样式 —— 我的第一个地理信息服务
+ * ============================================================ */
+
+/* 全局重置 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
+/* 统一容器：包住标题 + 地图 + 切换按钮，作为 .mswitch 的定位锚点 */
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* 地图容器 */
+#mapid {
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+/* 地图标题栏 */
+.map-title {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 16px;
+    color: #333;
+    background: linear-gradient(to right, #eef2f5, #cfd9df);
+    letter-spacing: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    box-sizing: border-box;
+}
+
+/*
+    切换底图按钮 —— 纯 CSS 样式，不依赖外部图片
+    定位相对于 .map-wrapper，top:60px 保证在标题栏下方、地图右上角
+    默认蓝底白字"卫星"，点击后加 .sat 类变绿底白字"地图"
+*/
+.mswitch {
+    width: 49px;
+    height: 46px;
+    position: absolute;
+    z-index: 99999;
+    top: 60px;
+    /* 标题栏 50px + 10px 间距 */
+    right: 10px;
+    cursor: pointer;
+    padding: 0;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background: #3498db;
+    vertical-align: bottom;
+    text-align: center;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+/* 点击后切为绿色（矢量底图态） */
+.mswitch.sat {
+    background: #2ecc71;
+}
+
+.mswitch:hover {
+    transform: scale(1.08);
+}
+
+/* 切换底图按钮内的文字 span */
+.mswitch span {
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    width: 45px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 1.4;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}

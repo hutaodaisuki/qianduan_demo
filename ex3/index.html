@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://leafletjs.com/docs/images/favicon.ico" />
+
+  <!-- Leaflet 样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+  <!-- 业务样式（同目录） -->
+  <link rel="stylesheet" href="style.css" />
+
+  <title>我的第一个地理信息服务</title>
+</head>
+
+<body>
+
+  <!--
+    关键结构：用 .map-wrapper 把标题 + 地图 + 按钮包在一起
+    .mswitch 保持是 #mapid 的兄弟节点 —— Leaflet 初始化时会清空 #mapid 的 innerHTML，
+    如果把按钮放里面会被删掉
+  -->
+  <div class="map-wrapper">
+    <div class="map-title">我的第一个地理信息服务 —— 天地图 + 热力图</div>
+
+    <div id="mapid"></div>
+
+    <!-- .mswitch 是兄弟节点，在 #mapid 外面，不会被 Leaflet 清空 -->
+    <div class="mswitch" id="mswitch" onclick="switchlayer()" onmouseover="swover()" onmouseout="swout()">
+      <span>卫星</span>
+    </div>
+  </div>
+
+  <!-- 第三方库：jQuery → Leaflet → heatmap.js → leaflet-heatmap（严格顺序依赖） -->
+  <script src="https://unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/heatmap.js/build/heatmap.min.js"></script>
+  <script src="https://unpkg.com/leaflet-heatmap@1.0.0/leaflet-heatmap.js"></script>
+
+  <!-- 业务脚本（同目录，放最后确保 DOM 和所有库已加载） -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>

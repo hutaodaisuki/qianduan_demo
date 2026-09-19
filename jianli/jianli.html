@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人简历 · WebGIS 方向</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="resume-container">
+    <!-- 头部 -->
+    <header class="header">
+      <div class="profile-top">
+        <div class="avatar">杨</div>
+        <div class="profile-info">
+          <h1>小杨</h1>
+          <p class="target-position">WebGIS 开发工程师 · GIS 数据分析师</p>
+          <div class="contact-tags">
+            <span class="tag">求职城市：长沙 / 杭州 / 南京 / 深圳</span>
+            <span class="tag">到岗时间：2026 年底</span>
+            <span class="tag">工作性质：全职</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 主体 -->
+    <main class="main">
+
+      <!-- 个人摘要 -->
+      <section class="summary">
+        <p>
+          具备扎实的 GIS 专业背景与全栈前端开发能力，熟悉二三维 WebGIS 架构设计与落地。
+          熟练运用 Cesium、Mapbox GL、OpenLayers 等主流地图引擎，结合 Vue / React 构建高性能地理信息产品。
+          对大规模空间数据可视化、矢量瓦片、三维场景渲染性能优化有深入实践，具备从需求分析到上线交付的完整项目经验。
+        </p>
+      </section>
+
+      <!-- 核心技能 -->
+      <section class="section">
+        <h2 class="section-title">核心技能</h2>
+
+        <div class="skill-group">
+          <div class="skill-group-title">GIS 技术栈</div>
+          <div class="skill-tags">
+            <span class="skill-tag level-advanced">Cesium.js</span>
+            <span class="skill-tag level-advanced">Mapbox GL JS</span>
+            <span class="skill-tag level-advanced">OpenLayers</span>
+            <span class="skill-tag level-intermediate">ArcGIS API for JS</span>
+            <span class="skill-tag level-intermediate">PostGIS</span>
+            <span class="skill-tag level-intermediate">GeoServer</span>
+            <span class="skill-tag level-familiar">QGIS</span>
+            <span class="skill-tag level-familiar">Leaflet</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">前端开发</div>
+          <div class="skill-tags">
+            <span class="skill-tag level-advanced">Vue 3 / Vue 2</span>
+            <span class="skill-tag level-advanced">React</span>
+            <span class="skill-tag level-advanced">TypeScript</span>
+            <span class="skill-tag level-intermediate">Vite / Webpack</span>
+            <span class="skill-tag level-intermediate">Pinia / Redux</span>
+            <span class="skill-tag level-intermediate">Three.js</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">工程工具 & 后端基础</div>
+          <div class="skill-tags">
+            <span class="skill-tag level-advanced">Git</span>
+            <span class="skill-tag level-intermediate">Node.js</span>
+            <span class="skill-tag level-intermediate">Python</span>
+            <span class="skill-tag level-intermediate">MySQL / PostgreSQL</span>
+            <span class="skill-tag level-familiar">Docker</span>
+            <span class="skill-tag level-familiar">Nginx</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">空间数据 & 标准</div>
+          <div class="skill-tags">
+            <span class="skill-tag level-intermediate">GeoJSON / TopoJSON</span>
+            <span class="skill-tag level-intermediate">WMS / WFS / WMTS</span>
+            <span class="skill-tag level-intermediate">矢量瓦片 (Vector Tile)</span>
+            <span class="skill-tag level-familiar">空间参考 / 投影转换</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 项目经历 -->
+      <section class="section">
+        <h2 class="section-title">项目经历</h2>
+
+        <!-- 项目1 -->
+        <div class="project">
+          <div class="project-header">
+            <div>
+              <h3 class="project-name">智慧国土三维可视化平台</h3>
+              <span class="project-role">WebGIS 前端核心开发</span>
+            </div>
+            <span class="project-period">2025.06 — 2026.03</span>
+          </div>
+          <p class="project-desc">
+            面向国土空间规划场景的二三维一体化 GIS 平台，支持多源数据融合展示、空间分析与专题图制作。
+          </p>
+          <ul class="project-points">
+            <li>基于 Cesium + Vue 3 + TypeScript 搭建三维渲染架构，实现倾斜摄影、BIM、矢量瓦片等多源数据的统一调度与可视化</li>
+            <li>封装通用组件库：图层管理树、属性查询面板、空间量测、专题地图渲染，组件复用率达 80%+</li>
+            <li>优化 3D Tiles 加载策略，通过 LOD 分级 + 请求合并 + 按需挂载，首屏加载时间从 8s 降至 2.5s</li>
+            <li>对接 PostGIS 后端，实现 WMS/WFS 服务的前端动态请求与样式控制</li>
+          </ul>
+          <div class="project-tech">
+            <span>Cesium.js</span>
+            <span>Vue 3</span>
+            <span>TypeScript</span>
+            <span>PostGIS</span>
+            <span>GeoServer</span>
+            <span>3D Tiles</span>
+          </div>
+        </div>
+
+        <!-- 项目2 -->
+        <div class="project">
+          <div class="project-header">
+            <div>
+              <h3 class="project-name">WebGIS 通用组件库（开源）</h3>
+              <span class="project-role">作者</span>
+            </div>
+            <span class="project-period">2024.09 — 2025.05</span>
+          </div>
+          <p class="project-desc">
+            基于 Mapbox GL / OpenLayers 的 Vue 3 地图组件库，提供开箱即用的地图交互与可视化能力。
+          </p>
+          <ul class="project-points">
+            <li>设计统一的组件 API 规范，封装地图容器、图层、控件、弹窗、热力图、聚合标记等 20+ 组件</li>
+            <li>实现双引擎适配层（Mapbox / OpenLayers），同一业务代码可切换渲染引擎</li>
+            <li>编写完整的 TypeScript 类型声明与 VitePress 文档，GitHub Star 1k+</li>
+          </ul>
+          <div class="project-tech">
+            <span>Mapbox GL JS</span>
+            <span>OpenLayers</span>
+            <span>Vue 3</span>
+            <span>TypeScript</span>
+            <span>Vite</span>
+          </div>
+        </div>
+
+        <!-- 项目3 -->
+        <div class="project">
+          <div class="project-header">
+            <div>
+              <h3 class="project-name">应急指挥二三维联动系统</h3>
+              <span class="project-role">前端开发</span>
+            </div>
+            <span class="project-period">2024.03 — 2024.08</span>
+          </div>
+          <p class="project-desc">
+            面向应急救援场景的指挥调度平台，实现二维态势与三维实景的联动展示。
+          </p>
+          <ul class="project-points">
+            <li>基于 ArcGIS API for JS + React 构建二维态势图，支持大规模要素的高性能渲染（10w+ 点位流畅交互）</li>
+            <li>设计二三维联动机制：点击二维要素自动定位三维场景、反之亦然</li>
+            <li>实现轨迹回放、视频接入、实时告警图层等应急特色功能</li>
+          </ul>
+          <div class="project-tech">
+            <span>ArcGIS API for JS</span>
+            <span>React</span>
+            <span>WebGL</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 教育背景 -->
+      <section class="section">
+        <h2 class="section-title">教育背景</h2>
+
+        <div class="edu-item">
+          <div class="edu-info">
+            <h4>某大学 · 地理信息科学（本科）</h4>
+            <p>主修课程：数据结构与算法、计算机网络、空间数据库、GIS 原理、遥感原理、数字摄影测量</p>
+          </div>
+          <span class="edu-period">2021.09 — 2025.06</span>
+        </div>
+      </section>
+
+      <!-- 证书 & 自我描述 -->
+      <section class="section">
+        <h2 class="section-title">证书与个人标签</h2>
+
+        <div class="misc-grid">
+          <div class="misc-item">
+            <h4>专业技能证书</h4>
+            <p>
+              · GIS 相关专业竞赛省级奖项<br>
+              · 全国大学生测绘科技竞赛<br>
+              · 计算机二级（Python / 数据库）
+            </p>
+          </div>
+          <div class="misc-item">
+            <h4>语言与工具</h4>
+            <p>
+              · 英语：CET-4（良好读写）<br>
+              · 熟悉 Linux 开发环境<br>
+              · 熟练使用 Figma / Axure（读原型）
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 求职意向 -->
+      <section class="section">
+        <h2 class="section-title">求职意向</h2>
+        <div class="summary no-margin">
+          <p>
+            <strong>目标岗位：</strong>WebGIS 开发工程师 / GIS 前端开发 / 三维可视化工程师<br>
+            <strong>期望城市：</strong>长沙、杭州、南京、深圳（可接受异地）<br>
+            <strong>期望薪资：</strong>根据岗位与经验面议，参考行业均值 10-20K / 月<br>
+            <strong>到岗时间：</strong>2026 年 12 月底
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+      本简历已隐去所有个人敏感信息 · 仅供参考格式使用
+    </footer>
+  </div>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>

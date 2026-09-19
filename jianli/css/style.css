@@ -1,0 +1,388 @@
+/* ==========================================
+   个人简历 · WebGIS 方向 — 样式表
+   ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+  color: #2c3e50;
+  line-height: 1.7;
+  padding: 40px 20px;
+}
+
+.resume-container {
+  max-width: 880px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+/* ===== 头部 ===== */
+.header {
+  background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+  color: #fff;
+  padding: 48px 48px 48px;
+}
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.profile-info h1 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.profile-info .target-position {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+.contact-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.contact-tags .tag {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* ===== 主体 ===== */
+.main {
+  padding: 0 48px 48px;
+}
+
+.summary {
+  background: #f8faff;
+  border-left: 4px solid #1a73e8;
+  padding: 20px 24px;
+  border-radius: 0 8px 8px 0;
+  margin: 24px 0 28px;
+}
+
+.summary p {
+  color: #4a5568;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* ===== 章节通用 ===== */
+.section {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a73e8;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e8f0fe;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title::before {
+  content: '';
+  width: 6px;
+  height: 22px;
+  background: #1a73e8;
+  border-radius: 3px;
+}
+
+/* ===== 技能矩阵 ===== */
+.skill-group {
+  margin-bottom: 18px;
+}
+
+.skill-group-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-group-title::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #1a73e8;
+  border-radius: 50%;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: #e8f0fe;
+  color: #1557b0;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: #1a73e8;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+}
+
+.skill-tag.level-advanced {
+  background: linear-gradient(135deg, #1a73e8, #0d47a1);
+  color: #fff;
+}
+
+.skill-tag.level-intermediate {
+  background: #e8f0fe;
+  color: #1557b0;
+}
+
+.skill-tag.level-familiar {
+  background: #f1f3f5;
+  color: #5a6674;
+}
+
+/* ===== 项目经历 ===== */
+.project {
+  margin-bottom: 28px;
+  padding: 22px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #edf2f7;
+  transition: all 0.25s;
+}
+
+.project:hover {
+  border-color: #1a73e8;
+  box-shadow: 0 6px 20px rgba(26, 115, 232, 0.12);
+  transform: translateY(-2px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.project-role {
+  font-size: 13px;
+  color: #718096;
+  background: #edf2f7;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.project-period {
+  font-size: 13px;
+  color: #a0aec0;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: #4a5568;
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.project-points {
+  list-style: none;
+  padding: 0;
+}
+
+.project-points li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #4a5568;
+  margin-bottom: 6px;
+  line-height: 1.7;
+}
+
+.project-points li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.project-tech {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-tech span {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  color: #718096;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* ===== 教育背景 ===== */
+.edu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 0;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.edu-item:last-child {
+  border-bottom: none;
+}
+
+.edu-info h4 {
+  font-size: 16px;
+  color: #2d3748;
+  margin-bottom: 4px;
+}
+
+.edu-info p {
+  font-size: 14px;
+  color: #718096;
+}
+
+.edu-period {
+  font-size: 13px;
+  color: #a0aec0;
+  flex-shrink: 0;
+}
+
+/* ===== 证书 & 语言 ===== */
+.misc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.misc-item h4 {
+  font-size: 15px;
+  color: #2d3748;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.misc-item h4::before {
+  content: '✓';
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.misc-item p {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.9;
+}
+
+/* ===== 页脚 ===== */
+.footer {
+  text-align: center;
+  padding: 20px 48px 32px;
+  font-size: 12px;
+  color: #a0aec0;
+  background: #fafbfc;
+}
+
+/* ===== 求职意向内联样式替代 ===== */
+.section .summary.no-margin {
+  margin: 0;
+  padding: 18px 22px;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .header {
+    padding: 32px 24px 40px;
+  }
+
+  .main {
+    padding: 0 24px 32px;
+  }
+
+  .profile-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-tags {
+    justify-content: center;
+  }
+
+  .misc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-header {
+    flex-direction: column;
+  }
+}
+
+/* ===== 打印样式 ===== */
+@media print {
+  body {
+    background: #fff;
+    padding: 0;
+  }
+
+  .resume-container {
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
